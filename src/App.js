@@ -8,13 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Form />
         <br />
         <Items />
-        <Item
-                    name={"TOODOO"}
-                    completed={false}
-        />
       </header>
     </div>
   );

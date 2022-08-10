@@ -1,11 +1,17 @@
 import { useState } from "react";
 
-function Form() {
+function Form( props ) {
 
     const [title, setTitle] = useState("");
 
-    function onSubmit( event ) {
+    const onSubmit = evt =>  {
+        evt.preventDefault();
 
+        console.log(props.addTodo)
+
+        props.addTodo(title)
+
+        setTitle("")
     }
 
 
